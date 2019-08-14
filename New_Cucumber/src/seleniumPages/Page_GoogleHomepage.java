@@ -36,5 +36,11 @@ public class Page_GoogleHomepage extends Page_BasePage {
 			System.out.println("I'm Feeling Lucky button is NOT displayed");
 		}
 	}
+	public void searchOnGoogleHomepage(String keyword) {
+		driver.findElement(By.name("q")).sendKeys(keyword);
+		driver.findElement(By.name("btnK")).click();
+	}
+
+
 
 }
